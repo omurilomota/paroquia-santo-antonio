@@ -15,3 +15,5 @@ ROTEIRO-APRESENTACAO.md
 _ops/
 .kilo/
 dist/
+.vercel
+.env*
