@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --color-cream: #faf5ea;
+  --color-parchment: #f1e7d3;
+  --color-ink: #241811;
+  --color-cocoa: #6b5340;
+  --color-gold: #b9882f;
+  --color-goldlight: #ddaf63;
+  --color-bordeaux: #6e2231;
+  --color-night: #150d07;
+
+  --animate-marquee: marquee 42s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream font-sans text-ink antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-cream);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-night);
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-gold) 65%, black);
+  border-radius: 999px;
+  border: 2px solid var(--color-night);
+}
+
+/* Esconde scrollbar em faixas de rolagem horizontal */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Film grain overlay */
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  opacity: 0.32;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+.font-display {
+  font-optical-sizing: auto;
+}
+
+/* Chama da vela do mural */
+@keyframes flicker {
+  0%, 100% { transform: scale(1) rotate(-1.5deg); opacity: 0.92; }
+  22% { transform: scale(1.07, 0.94) rotate(2deg); opacity: 1; }
+  47% { transform: scale(0.95, 1.06) rotate(-1deg); opacity: 0.86; }
+  71% { transform: scale(1.04, 0.97) rotate(1.5deg); opacity: 1; }
+}
+.flame {
+  animation: flicker 1.7s ease-in-out infinite;
+  transform-origin: bottom center;
+}

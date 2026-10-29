@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+.env.*.local
+.vercel/
+.kilo/
+*.log
+.DS_Store
+Thumbs.db
+
+# Conteúdo interno e artefatos locais (não publicar)
+ROTEIRO-APRESENTACAO.md
+_ops/
+.kilo/
+dist/
