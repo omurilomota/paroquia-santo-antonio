@@ -28,7 +28,7 @@ const CANAIS = [
     titulo: "Telefones",
     linha1: `Fixo ${PARISH.telefoneFixo}`,
     linha2: `Celular e WhatsApp ${PARISH.phones[1]}`,
-    href: `tel:+551838411268`,
+    href: `tel:+551735550102`,
   },
   {
     icon: Mail,
