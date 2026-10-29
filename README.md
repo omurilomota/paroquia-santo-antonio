@@ -4,7 +4,7 @@ Site institucional para paróquia com agenda, sacramentos e liturgia.
 
 > **Demonstração pública.** Telefones, WhatsApp, e-mail, endereço, CNPJ, redes sociais e dados de clientes são fictícios. Nenhum pedido, mensagem ou formulário é enviado a um canal real.
 
-[**Ver demonstração**](https://paroquia-santo-antonio.vercel.app) · React 19 · Vite 7 · TypeScript · Tailwind CSS 4
+[**Ver demonstração**](https://paroquia-santo-antonio-muriloinc.vercel.app) · React 19 · Vite 7 · TypeScript · Tailwind CSS 4
 
 ## O que tem
 
