@@ -129,6 +129,17 @@ export default function Footer() {
           <span className="mt-2 block text-cream/25">
             Site conceito de portfólio · paróquia, clero e contatos fictícios
           </span>
+          <span className="mt-1 block text-[10px] tracking-[0.16em] text-cream/20">
+            <a
+              href="https://wa.me/5518998133524"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Falar com Murilo Mota no WhatsApp"
+              className="transition-colors hover:text-gold/70"
+            >
+              Desenvolvido por Murilo Mota · 55 (18) 99813-3524
+            </a>
+          </span>
         </div>
       </div>
     </footer>
